@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the Future with CS Courses Academy - Shaping tomorrow’s technology and creating world-changing solutions.">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <title>CS Courses Academy</title>
+</head>
+
+<body>
+    <!-- Registration Form -->
+<form id="registerForm">
+    <input type="text" id="registerUsername" placeholder="Username" required>
+    <input type="password" id="registerPassword" placeholder="Password" required>
+    <button type="submit">Register</button>
+</form>
+
+<!-- Login Form -->
+<form id="loginForm">
+    <input type="text" id="loginUsername" placeholder="Username" required>
+    <input type="password" id="loginPassword" placeholder="Password" required>
+    <button type="submit">Login</button>
+</form>
+
+    <header class="bg-light sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://t3.ftcdn.net/jpg/03/13/48/04/360_F_313480456_mDiNEBsdIa2U4zvaGXDQ8yvurXV1MuNy.jpg" alt="CS Courses Academy Logo" width="30">
+                    <span class="logo-text">CS Courses Academy</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart" aria-label="Shopping Cart"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center justify-content-center semi-transparent-bg text-white p-5">
+                <div>
+                    <h1>Discover the Future With CS Courses Academy!</h1>
+                    <p class="mb-4"><em>You're taking the first step towards shaping tomorrow’s technology and creating solutions that can change the world.</em></p>
+                    <a href="products.html" class="btn btn-light btn-lg">Shop Now &#10142;</a>
+                </div>
+            </div>
+            <div class="col-md-6 banner-image" alt="Banner Image"></div>
+        </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <main>
+        <div class="container my-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="text-center mb-0">Featured Courses</h2>
+                <a href="products.html" class="btn btn-warning">Show All Courses</a>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="https://img.freepik.com/premium-vector/brain-logo-template_15146-28.jpg?w=740" class="card-img-top" alt="Data Science & Machine Learning (AI)">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Science & Machine Learning (AI)</h5>
+                        </div>
+                        <div class="card-footer">
+                            <p class="card-text">$299.00</p>
+                            <form action="cart.html" method="GET">
+                                <input type="hidden" name="product" value="Data Science & Machine Learning (AI)">
+                                <input type="hidden" name="price" value="299.00">
+                                <input type="hidden" name="quantity" value="1">
+                                <button class="btn btn-warning add-to-cart">Add to Cart</button>
+                            </form>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="https://www.codemotion.com/magazine/wp-content/uploads/2020/09/devops-1024x527.png" class="card-img-top" alt="DevOps Engineer">
+                        <div class="card-body">
+                            <h5 class="card-title">DevOps Engineer</h5>
+                        </div>
+                        <div class="card-footer">
+                            <p class="card-text">$149.00</p>
+                            <form action="cart.html" method="GET">
+                                <input type="hidden" name="product" value="DevOps Engineer">
+                                <input type="hidden" name="price" value="149.00">
+                                <input type="hidden" name="quantity" value="1">
+                                <button class="btn btn-warning add-to-cart">Add to Cart</button>
+                            </form>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="https://miro.medium.com/v2/resize:fit:750/1*p6cTkkCA7Xox6jq1bl7JZg.png" class="card-img-top" alt="Flutter & Dart App development">
+                        <div class="card-body">
+                            <h5 class="card-title">Flutter & Dart App development</h5>
+                        </div>
+                        <div class="card-footer">
+                            <p class="card-text">$45.00</p>
+                            <form action="cart.html" method="GET">
+                                <input type="hidden" name="product" value="Flutter & Dart App development">
+                                <input type="hidden" name="price" value="45.00">
+                                <input type="hidden" name="quantity" value="1">
+                                <button class="btn btn-warning add-to-cart">Add to Cart</button>
+                            </form>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="https://softtech.com/wp-content/uploads/2020/09/UX-vs-UI-Design-1024x819.jpg" class="card-img-top" alt="UX UI Designer">
+                        <div class="card-body">
+                            <h5 class="card-title">UX UI Designer</h5>
+                        </div>
+                        <div class="card-footer">
+                            <p class="card-text">$199.00</p>
+                            <form action="cart.html" method="GET">
+                                <input type="hidden" name="product" value="UX UI Designer">
+                                <input type="hidden" name="price" value="199.00">
+                                <input type="hidden" name="quantity" value="1">
+                                <button class="btn btn-warning add-to-cart">Add to Cart</button>
+                            </form>
+                        </div>
+                    </article>
+                </div>
+                <!-- add course-->
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- New Product -->
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <img src="https://static.wixstatic.com/media/c42767_7b0c9ed87ae84009acbc9857b4b64bc2~mv2.png/v1/fill/w_1655,h_1280,al_c,q_95,enc_auto/c42767_7b0c9ed87ae84009acbc9857b4b64bc2~mv2.png" class="img-fluid" alt="New Product">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <p>Our Newest Product Offer</p>
+                        <h1>Digital Transformation Learning Paths</h1>
+                        <small>Learn the skills you need to become the critical link between business functions and the technology that enables them.</small>
+                        <br>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Digital Transformation Learning Paths">
+                            <input type="hidden" name="price" value="199.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <button class="btn btn-warning add-to-cart">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="container my-5">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <h2 class="text-center">Contact Us</h2>
+                </div>
+                <div class="col-md-8 mx-auto border rounded p-4 shadow-sm">
+                    <form>
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="contactName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="contactEmail" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="contactMessage" rows="3" placeholder="Your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <img src="https://t3.ftcdn.net/jpg/03/13/48/04/360_F_313480456_mDiNEBsdIa2U4zvaGXDQ8yvurXV1MuNy.jpg" alt="CS Courses Academy Logo" class="mb-2" width="60">
+                    <p>Discover the Future <br> With CS Courses Academy!</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Navigation</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none text-light">Home</a></li>
+                        <li><a href="products.html" class="text-decoration-none text-light">Courses</a></li>
+                        <li><a href="index.html#contact" class="text-decoration-none text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Follow Us</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-light"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#" class="text-decoration-none text-light"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#" class="text-decoration-none text-light"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Contact Us</h3>
+                    <address>
+                        1234 Street Name<br>
+                        City, State, ZIP<br>
+                        <a href="mailto:info@cscoursesacademy.com" class="text-decoration-none text-light">info@cscoursesacademy.com</a>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXlYCX2nPWnLYostE6DprEO65rN98+UTp1RVzWlA4XZVnOzK9RzlC5I8cV0B" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhG81rImqs8R+8fs2Xwv3EZ6c2h0MTFjW47/nI3zCgsYY7h1IbryTn+LxnH5" crossorigin="anonymous" defer></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

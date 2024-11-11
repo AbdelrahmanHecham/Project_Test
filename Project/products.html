@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+    <title>CS Courses Academy</title>
+</head>
+
+<body>
+    <header class="bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://t3.ftcdn.net/jpg/03/13/48/04/360_F_313480456_mDiNEBsdIa2U4zvaGXDQ8yvurXV1MuNy.jpg" alt="CS Courses Academy Logo" width="30">
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+<!--- Courses Section -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Our Courses</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <!-- Product 1 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://img.freepik.com/premium-vector/brain-logo-template_15146-28.jpg?w=740" class="card-img-top" alt="Data Science & Machine Learning (AI)">
+                <div class="card-body">
+                    <h5 class="card-title">Data Science & Machine Learning (AI)</h5>
+                </div>
+                <div class="card-footer">
+                    <p class="card-text">$299.00</p>
+                    <form action="cart.html" method="GET">
+                        <input type="hidden" name="product" value="Data Science & Machine Learning (AI)">
+                        <input type="hidden" name="price" value="299.00">
+                        <input type="hidden" name="quantity" value="1">
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://www.codemotion.com/magazine/wp-content/uploads/2020/09/devops-1024x527.png" class="card-img-top" alt="DevOps Engineer">
+                <div class="card-body">
+                    <h5 class="card-title">DevOps Engineer</h5>
+                </div>
+                <div class="card-footer">
+                    <p class="card-text">$149.00</p>
+                    <form action="cart.html" method="GET">
+                        <input type="hidden" name="product" value="DevOps Engineer">
+                        <input type="hidden" name="price" value="149.00">
+                        <input type="hidden" name="quantity" value="1">
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://miro.medium.com/v2/resize:fit:750/1*p6cTkkCA7Xox6jq1bl7JZg.png" class="card-img-top" alt="Flutter & Dart App development">
+                <div class="card-body">
+                    <h5 class="card-title">Flutter & Dart App development</h5>
+                </div>
+                <div class="card-footer">
+                    <p class="card-text">$45.00</p>
+                    <form action="cart.html" method="GET">
+                        <input type="hidden" name="product" value="Flutter & Dart App development">
+                        <input type="hidden" name="price" value="45.00">
+                        <input type="hidden" name="quantity" value="1">
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://softtech.com/wp-content/uploads/2020/09/UX-vs-UI-Design-1024x819.jpg" class="card-img-top" alt="UX UI Designer">
+                <div class="card-body">
+                    <h5 class="card-title">UX UI Designer</h5>
+                </div>
+                <div class="card-footer">
+                    <p class="card-text">$199.00</p>
+                    <form action="cart.html" method="GET">
+                        <input type="hidden" name="product" value="UX UI Designer">
+                        <input type="hidden" name="price" value="199.00">
+                        <input type="hidden" name="quantity" value="1">
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <img src="https://t3.ftcdn.net/jpg/03/13/48/04/360_F_313480456_mDiNEBsdIa2U4zvaGXDQ8yvurXV1MuNy.jpg" alt="CS Courses Academy Logo" class="mb-2" width="60">
+                    <p>Discover the Future <br> With CS Courses Academy!</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Navigation</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none text-light">Home</a></li>
+                        <li><a href="products.html" class="text-decoration-none text-light">Courses</a></li>
+                        <li><a href="index.html#contact" class="text-decoration-none text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Follow Us</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-light"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#" class="text-decoration-none text-light"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#" class="text-decoration-none text-light"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Contact Us</h3>
+                    <address>
+                        1234 Street Name<br>
+                        City, State, ZIP<br>
+                        <a href="mailto:info@cscoursesacademy.com" class="text-decoration-none text-light">info@cscoursesacademy.com</a>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXlYCX2nPWnLYostE6DprEO65rN98+UTp1RVzWlA4XZVnOzK9RzlC5I8cV0B" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhG81rImqs8R+8fs2Xwv3EZ6c2h0MTFjW47/nI3zCgsYY7h1IbryTn+LxnH5" crossorigin="anonymous" defer></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

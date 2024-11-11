@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - CS Courses Academy</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-light py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://t3.ftcdn.net/jpg/03/13/48/04/360_F_313480456_mDiNEBsdIa2U4zvaGXDQ8yvurXV1MuNy.jpg" alt="CS Courses Academy Logo" width="40">
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Cart Items List -->
+                <div class="cart-item mb-3" data-price="99.99">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="course-image.jpg" alt="Course Image" class="img-fluid">
+                        </div>
+                        <div class="col-md-5">
+                            <h5>Course Title</h5>
+                            <p>Course description goes here...</p>
+                        </div>
+                        <div class="col-md-2">
+                            <input type="number" class="form-control quantity" value="1" min="1" onchange="updateCart()">
+                        </div>
+                        <div class="col-md-2">
+                            <p class="text-end price">$99.99</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more cart items here -->
+            </div>
+            <div class="col-md-4">
+                <!-- Cart Summary -->
+                <div class="border p-3">
+                    <h3 class="mb-3">Cart Summary</h3>
+                    <p>Total Items: <span id="total-items">1</span></p>
+                    <p>Total Price: $<span id="total-price">99.99</span></p>
+                    <button class="btn btn-primary btn-block">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container text-center">
+            &copy; Copyright 2023 - CS Courses Academy
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-PPmltI4DzdaNfQz9JdGpI3TZfvlw7irzjBn3wKgNmCUp0auj/uTPmSy7Ou1EP9J4" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
